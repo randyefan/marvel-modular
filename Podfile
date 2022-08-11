@@ -23,5 +23,8 @@ target 'MarvelApp' do
   pod 'RxCocoa', '5.1.1'
   pod 'RxSwift', '5.1.1'
   pod 'SwifterSwift', '5.0.0'
+  
+  # Autolayout
+  pod 'SnapKit', '5.0.0'
 
 end

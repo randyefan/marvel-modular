@@ -11,6 +11,20 @@ import Alamofire_SwiftyJSON
 import SwiftyJSON
 import SwifterSwift
 
+class ErrorObject: NSObject {
+    var errorCode: String?
+    var message: String
+    var errorHandlerType: ErrorHandlerType
+    var otherInfo: Any?
+    
+    init(errorCode: String?, message: String, errorHandlerType: ErrorHandlerType, otherInfo: Any? = nil) {
+        self.errorCode = errorCode
+        self.message = message
+        self.errorHandlerType = errorHandlerType
+        self.otherInfo = otherInfo
+    }
+}
+
 enum ErrorHandlerType {
     case doNothing
     case showSnackbarOnly
@@ -71,8 +85,6 @@ class ApiHelper {
                 case .success(response.result.value):
                     // Valid JSON Response
                     guard let value = response.result.value else {
-                        // No Response Value
-                        print("Default Error Message")
                         api.failed(nil, response.response?.statusCode ?? -1)
                         return
                     }
@@ -81,26 +93,16 @@ class ApiHelper {
                     api.success(value, response.response?.statusCode ?? -1)
                 case .failure(let error):
                     if response.response?.statusCode == ErrorCode.errInternalServer.rawValue || response.response?.statusCode == ErrorCode.errUnavailableService.rawValue {
-                        // Internet Lost, Service Unavailable, Internal Server Error
-                        print("Internet Lost, Service Unavailable, Internal Server Error")
                         api.failed(nil, response.response?.statusCode ?? -1)
                     } else if error._code == NSURLErrorTimedOut || response.response?.statusCode == ErrorCode.errTimeOut.rawValue {
-                        // RTO
-                        print("Request Time Out")
                         api.failed(nil, response.response?.statusCode ?? -1)
                     } else if error._code == NSURLErrorCancelled {
-                        // Cancelled
-                        print("Cancelled")
                         api.failed(["network_error": NSURLErrorCancelled], response.response?.statusCode ?? -1)
                     } else if error._code == ErrorCode.errBackgroundFetch.rawValue || error._code == ErrorCode.errNetworkLost.rawValue || error._code == ErrorCode.errHttpLoadFailed.rawValue {
-                        // Failed connection in background
-                        print("Need to retry api call")
                         api.failed(["network_error": ErrorCode.errBackgroundFetch.rawValue], response.response?.statusCode ?? -1)
                     } else {
                         // Valid JSON Response
                         guard let value = response.result.value else {
-                            // No Response Value
-                            print("Default Error Message")
                             api.failed(nil, response.response?.statusCode ?? -1)
                             return
                         }
@@ -124,17 +126,14 @@ extension Alamofire.SessionManager {
         method: HTTPMethod = .get,
         parameters: Parameters? = nil,
         encoding: ParameterEncoding = URLEncoding.default,
-        headers: HTTPHeaders? = nil) // also you can add URLRequest.CachePolicy here as parameter
+        headers: HTTPHeaders? = nil)
         -> DataRequest? {
             do {
                 var urlRequest = try URLRequest(url: url, method: method, headers: headers)
-                urlRequest.cachePolicy = .reloadIgnoringCacheData // <<== Cache disabled
+                urlRequest.cachePolicy = .reloadIgnoringCacheData
                 let encodedURLRequest = try encoding.encode(urlRequest, with: parameters)
                 return request(encodedURLRequest)
             } catch {
-                // MARK: find a better way to handle error
-                print(error)
-                
                 guard let url = "http://example.com/wrong_request".url else { return nil }
                 return request(URLRequest(url: url))
             }

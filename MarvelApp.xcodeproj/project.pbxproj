@@ -11,6 +11,18 @@
 		614AFB1A28A5523400F5F067 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 614AFB1928A5523400F5F067 /* Assets.xcassets */; };
 		614AFB1D28A5523400F5F067 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 614AFB1B28A5523400F5F067 /* LaunchScreen.storyboard */; };
 		614AFB2928A556BC00F5F067 /* APIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614AFB2828A556BC00F5F067 /* APIHelper.swift */; };
+		614AFB3D28A55A2900F5F067 /* CharacterListRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614AFB3028A55A2900F5F067 /* CharacterListRemoteDataManager.swift */; };
+		614AFB3E28A55A2900F5F067 /* CharacterListModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614AFB3228A55A2900F5F067 /* CharacterListModule.swift */; };
+		614AFB3F28A55A2900F5F067 /* CharacterListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614AFB3428A55A2900F5F067 /* CharacterListPresenter.swift */; };
+		614AFB4028A55A2900F5F067 /* CharacterListAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614AFB3628A55A2900F5F067 /* CharacterListAdapter.swift */; };
+		614AFB4128A55A2900F5F067 /* CharacterListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614AFB3828A55A2900F5F067 /* CharacterListViewController.swift */; };
+		614AFB4228A55A2900F5F067 /* CharacterListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614AFB3A28A55A2900F5F067 /* CharacterListInteractor.swift */; };
+		614AFB4328A55A2900F5F067 /* CharacterListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614AFB3C28A55A2900F5F067 /* CharacterListRouter.swift */; };
+		614AFB4628A55B0D00F5F067 /* Extension+UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614AFB4528A55B0D00F5F067 /* Extension+UICollectionView.swift */; };
+		614AFB4928A55B4D00F5F067 /* AppHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614AFB4828A55B4D00F5F067 /* AppHelper.swift */; };
+		614AFB4B28A55C2700F5F067 /* Extension+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614AFB4A28A55C2700F5F067 /* Extension+UIView.swift */; };
+		614AFB4D28A55CA600F5F067 /* Extension+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614AFB4C28A55CA600F5F067 /* Extension+UIViewController.swift */; };
+		614AFB4F28A55D8100F5F067 /* Extension+ListAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614AFB4E28A55D8100F5F067 /* Extension+ListAdapter.swift */; };
 		69A6ACA847DAB15299FACED1 /* Pods_MarvelApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0686946A7A560A0C17BD6AC3 /* Pods_MarvelApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -22,6 +34,18 @@
 		614AFB1C28A5523400F5F067 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		614AFB1E28A5523400F5F067 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		614AFB2828A556BC00F5F067 /* APIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHelper.swift; sourceTree = "<group>"; };
+		614AFB3028A55A2900F5F067 /* CharacterListRemoteDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterListRemoteDataManager.swift; sourceTree = "<group>"; };
+		614AFB3228A55A2900F5F067 /* CharacterListModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterListModule.swift; sourceTree = "<group>"; };
+		614AFB3428A55A2900F5F067 /* CharacterListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterListPresenter.swift; sourceTree = "<group>"; };
+		614AFB3628A55A2900F5F067 /* CharacterListAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterListAdapter.swift; sourceTree = "<group>"; };
+		614AFB3828A55A2900F5F067 /* CharacterListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterListViewController.swift; sourceTree = "<group>"; };
+		614AFB3A28A55A2900F5F067 /* CharacterListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterListInteractor.swift; sourceTree = "<group>"; };
+		614AFB3C28A55A2900F5F067 /* CharacterListRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterListRouter.swift; sourceTree = "<group>"; };
+		614AFB4528A55B0D00F5F067 /* Extension+UICollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UICollectionView.swift"; sourceTree = "<group>"; };
+		614AFB4828A55B4D00F5F067 /* AppHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppHelper.swift; sourceTree = "<group>"; };
+		614AFB4A28A55C2700F5F067 /* Extension+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIView.swift"; sourceTree = "<group>"; };
+		614AFB4C28A55CA600F5F067 /* Extension+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIViewController.swift"; sourceTree = "<group>"; };
+		614AFB4E28A55D8100F5F067 /* Extension+ListAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+ListAdapter.swift"; sourceTree = "<group>"; };
 		791D72B97D656FBA9128EC08 /* Pods-MarvelApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarvelApp.debug.xcconfig"; path = "Target Support Files/Pods-MarvelApp/Pods-MarvelApp.debug.xcconfig"; sourceTree = "<group>"; };
 		89483656E629946335D0E763 /* Pods-MarvelApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarvelApp.release.xcconfig"; path = "Target Support Files/Pods-MarvelApp/Pods-MarvelApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -59,6 +83,8 @@
 		614AFB0F28A5523300F5F067 /* MarvelApp */ = {
 			isa = PBXGroup;
 			children = (
+				614AFB4728A55B2E00F5F067 /* Helper */,
+				614AFB4428A55AFE00F5F067 /* Extension */,
 				614AFB2728A5532900F5F067 /* App */,
 				614AFB2628A552FD00F5F067 /* Modules */,
 				614AFB2528A552F200F5F067 /* Networking */,
@@ -86,6 +112,7 @@
 		614AFB2628A552FD00F5F067 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				614AFB2E28A55A2900F5F067 /* CharacterList */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -98,6 +125,95 @@
 				614AFB1B28A5523400F5F067 /* LaunchScreen.storyboard */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		614AFB2E28A55A2900F5F067 /* CharacterList */ = {
+			isa = PBXGroup;
+			children = (
+				614AFB2F28A55A2900F5F067 /* RemoteDataManager */,
+				614AFB3128A55A2900F5F067 /* Module */,
+				614AFB3328A55A2900F5F067 /* Presenter */,
+				614AFB3528A55A2900F5F067 /* Adapter */,
+				614AFB3728A55A2900F5F067 /* View */,
+				614AFB3928A55A2900F5F067 /* Interactor */,
+				614AFB3B28A55A2900F5F067 /* Router */,
+			);
+			path = CharacterList;
+			sourceTree = "<group>";
+		};
+		614AFB2F28A55A2900F5F067 /* RemoteDataManager */ = {
+			isa = PBXGroup;
+			children = (
+				614AFB3028A55A2900F5F067 /* CharacterListRemoteDataManager.swift */,
+			);
+			path = RemoteDataManager;
+			sourceTree = "<group>";
+		};
+		614AFB3128A55A2900F5F067 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				614AFB3228A55A2900F5F067 /* CharacterListModule.swift */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		614AFB3328A55A2900F5F067 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				614AFB3428A55A2900F5F067 /* CharacterListPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		614AFB3528A55A2900F5F067 /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+				614AFB3628A55A2900F5F067 /* CharacterListAdapter.swift */,
+			);
+			path = Adapter;
+			sourceTree = "<group>";
+		};
+		614AFB3728A55A2900F5F067 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				614AFB3828A55A2900F5F067 /* CharacterListViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		614AFB3928A55A2900F5F067 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				614AFB3A28A55A2900F5F067 /* CharacterListInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		614AFB3B28A55A2900F5F067 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				614AFB3C28A55A2900F5F067 /* CharacterListRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		614AFB4428A55AFE00F5F067 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				614AFB4528A55B0D00F5F067 /* Extension+UICollectionView.swift */,
+				614AFB4A28A55C2700F5F067 /* Extension+UIView.swift */,
+				614AFB4C28A55CA600F5F067 /* Extension+UIViewController.swift */,
+				614AFB4E28A55D8100F5F067 /* Extension+ListAdapter.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		614AFB4728A55B2E00F5F067 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				614AFB4828A55B4D00F5F067 /* AppHelper.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 		9DDE5F40A7883460F72563EE /* Frameworks */ = {
@@ -232,7 +348,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				614AFB2928A556BC00F5F067 /* APIHelper.swift in Sources */,
+				614AFB4F28A55D8100F5F067 /* Extension+ListAdapter.swift in Sources */,
+				614AFB4028A55A2900F5F067 /* CharacterListAdapter.swift in Sources */,
+				614AFB4B28A55C2700F5F067 /* Extension+UIView.swift in Sources */,
+				614AFB3F28A55A2900F5F067 /* CharacterListPresenter.swift in Sources */,
+				614AFB4328A55A2900F5F067 /* CharacterListRouter.swift in Sources */,
+				614AFB4628A55B0D00F5F067 /* Extension+UICollectionView.swift in Sources */,
+				614AFB3D28A55A2900F5F067 /* CharacterListRemoteDataManager.swift in Sources */,
+				614AFB4228A55A2900F5F067 /* CharacterListInteractor.swift in Sources */,
+				614AFB4D28A55CA600F5F067 /* Extension+UIViewController.swift in Sources */,
+				614AFB4128A55A2900F5F067 /* CharacterListViewController.swift in Sources */,
 				614AFB1128A5523300F5F067 /* AppDelegate.swift in Sources */,
+				614AFB4928A55B4D00F5F067 /* AppHelper.swift in Sources */,
+				614AFB3E28A55A2900F5F067 /* CharacterListModule.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,7 +505,7 @@
 				INFOPLIST_FILE = MarvelApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -389,7 +517,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -406,7 +534,7 @@
 				INFOPLIST_FILE = MarvelApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -418,7 +546,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
